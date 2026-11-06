@@ -1,0 +1,61 @@
+include "%L"
+
+# ===== Dashes, ellipsis, quotes (unchanged — already working) =====
+<Multi_key> <minus>        : "–" U2013   # en dash
+<Multi_key> <underscore>   : "—" U2014   # em dash
+<Multi_key> <period>       : "…" U2026   # ellipsis
+<Multi_key> <bracketleft>  : "“" U201C  # Left double quotation mark
+<Multi_key> <braceleft>    : "”" U201D  # Right double quotation mark
+<Multi_key> <bracketright> : "‘" U2018  # Left single quotation mark
+<Multi_key> <braceright>   : "’" U2019  # Right single quotation mark
+<Multi_key> <backslash>    : "«" U00AB
+<Multi_key> <bar>          : "»" U00BB
+
+# ===== Math operators (mnemonic, your explicit asks) =====
+<Multi_key> <x>                  : "×" U00D7   # x -> multiply
+<Multi_key> <exclam> <equal>     : "≠" U2260   # != 
+<Multi_key> <less> <equal>       : "≤" U2264   # <=
+<Multi_key> <greater> <equal>    : "≥" U2265   # >=
+<Multi_key> <plus> <minus>       : "±" U00B1   # +-
+<Multi_key> <asciitilde> <equal> : "≈" U2248   # ~=
+<Multi_key> <slash> <slash>      : "÷" U00F7   # // = division
+<Multi_key> <8>                  : "∞" U221E   # sideways 8
+<Multi_key> <0>                  : "°" U00B0   # degree
+<Multi_key> <asterisk>           : "•" U2022   # bullet
+
+# ===== Calculus / set notation (spelled-out mnemonics) =====
+<Multi_key> <s> <q>     : "√" U221A   # sq(rt)
+<Multi_key> <p> <i>     : "π" U03C0   # pi
+<Multi_key> <s> <u> <m> : "∑" U2211   # sum
+<Multi_key> <i> <n> <t> : "∫" U222B   # int(egral)
+<Multi_key> <d> <e> <l> : "∆" U2206   # del/delta
+<Multi_key> <p> <a> <r> : "∂" U2202   # par(tial)
+<Multi_key> <a> <p> <x> : "≅" U2245   # apx (congruent/approx)
+<Multi_key> <s> <s>     : "ß" U00DF  # ss -> sharp s
+<Multi_key> <o> <m>     : "Ω" U03A9   # ohm/omega
+<Multi_key> <m> <u>     : "µ" U00B5   # mu/micro
+
+# ===== Superscripts (^ = power of) =====
+<Multi_key> <asciicircum> <0> : "⁰" U2070
+<Multi_key> <asciicircum> <1> : "¹" U00B9
+<Multi_key> <asciicircum> <2> : "²" U00B2
+<Multi_key> <asciicircum> <3> : "³" U00B3
+<Multi_key> <asciicircum> <n> : "ⁿ" U207F
+
+# ===== Arrows (a = arrow, then direction) =====
+<Multi_key> <a> <r> : "→" U2192
+<Multi_key> <a> <l> : "←" U2190
+<Multi_key> <a> <u> : "↑" U2191
+<Multi_key> <a> <d> : "↓" U2193
+<Multi_key> <a> <a> : "↔" U2194
+
+# ===== Currency =====
+<Multi_key> <y>     : "¥" U00A5   # yen, single key
+<Multi_key> <e> <u> : "€" U20AC   # eu
+<Multi_key> <g> <b> : "£" U00A3   # gb (pound)
+<Multi_key> <c> <e> : "¢" U00A2   # ce (cent)
+
+# ===== Legal =====
+<Multi_key> <r>     : "®" U00AE   # registered, single key
+<Multi_key> <t> <m> : "™" U2122
+<Multi_key> <c> <o> : "©" U00A9   # co (copyright)

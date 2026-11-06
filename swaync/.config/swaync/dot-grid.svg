@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .dot {
+        /* Base opacity set low directly on the purple fill and red stroke */
+        fill: rgba(203, 166, 247, 0.02);
+        stroke: rgba(243, 139, 168, 0.03);
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <circle cx="12" cy="12" r="2" class="dot" />
+  <circle cx="0" cy="0" r="2" class="dot" />
+  <circle cx="24" cy="0" r="2" class="dot" />
+  <circle cx="0" cy="24" r="2" class="dot" />
+  <circle cx="24" cy="24" r="2" class="dot" />
+</svg>

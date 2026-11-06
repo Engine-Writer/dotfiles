@@ -1,0 +1,11 @@
+{
+    "name": "cybrfunk",
+    "manifest_version": "1",
+    "extend_theme": "dark",
+    "css_file": "theme.css",
+    "css_file_gtk_3.20+": "theme.css",
+    "matched_text_hl_colors": {
+        "when_selected": "#1e1e2e",
+        "when_not_selected": "#89b4fa"
+    }
+}

@@ -1,0 +1,12 @@
+width=540
+height=440
+location=center
+show=drun
+allow_markup=true
+insensitive=true
+matching=fuzzy
+gtk_dark=true
+hide_scroll=true
+
+run-always_parse_args=true
+exec_search=true

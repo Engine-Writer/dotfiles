@@ -1,0 +1,118 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+    color: #cdd6f4;
+}
+
+window {
+    background: linear-gradient(135deg,
+            rgba(137, 180, 250, 0.44) 0%,
+            rgba(30, 30, 46, 0.52) 45%,
+            rgba(203, 166, 247, 0.41) 100%);
+    border-radius: 18px;
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.21),
+        inset 0 -1px 1px rgba(0, 0, 0, 0.45),
+        inset 0 0 24px rgba(137, 180, 250, 0.12),
+        0 6px 18px rgba(0, 0, 0, 0.30);
+}
+
+#outer-box {
+    padding: 10px 12px;
+    margin: 0px;
+    background: transparent;
+}
+
+#input {
+    background: rgba(255, 255, 255, 0.045);
+    border-radius: 10px;
+    padding: 7px 10px;
+    margin: 2px 3px 10px 3px;
+    color: #cdd6f4;
+    caret-color: #89b4fa;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+#input:hover {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+
+#input:focus {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.18),
+        0 0 10px rgba(137, 180, 250, 0.30);
+}
+
+#inner-box,
+#scroll {
+    background: transparent;
+}
+
+#entry {
+    background: rgba(255, 255, 255, 0.045);
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin: 4px 3px;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+#entry:hover {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+
+#entry:selected {
+    background: linear-gradient(135deg,
+            rgba(137, 180, 250, 0.95),
+            rgba(203, 166, 247, 0.85));
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.35),
+        0 0 12px rgba(137, 180, 250, 0.45);
+}
+
+#text {
+    color: #cdd6f4;
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+#entry:selected #text {
+    color: #1e1e2e;
+}
+
+#img {
+    margin-right: 8px;
+}
+
+scrollbar.horizontal {
+    min-height: 0;
+    opacity: 0;
+}
+
+scrollbar.vertical {
+    background: transparent;
+}
+
+scrollbar.vertical slider {
+    background: rgba(203, 166, 247, 0.35);
+    border-radius: 8px;
+    min-width: 6px;
+}
+
+scrollbar.vertical slider:hover {
+    background: rgba(203, 166, 247, 0.55);
+}
+
+tooltip {
+    background: rgba(30, 30, 46, 0.96);
+    border-radius: 12px;
+    border: 1px solid rgba(137, 180, 250, 0.27);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.30);
+}
+
+tooltip label {
+    color: #cdd6f4;
+    padding: 4px 6px;
+}

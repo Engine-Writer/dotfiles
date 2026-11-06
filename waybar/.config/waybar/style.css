@@ -1,0 +1,229 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+/* Glass containers */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: linear-gradient(135deg,
+            rgba(137, 180, 250, 0.44) 0%,
+            rgba(30, 30, 46, 0.52) 45%,
+            rgba(203, 166, 247, 0.41) 100%);
+    border-radius: 18px;
+    margin: 8px;
+    padding: 6px 12px;
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.16),
+        inset 0 -1px 1px rgba(0, 0, 0, 0.35),
+        inset 0 0 24px rgba(137, 180, 250, 0.06),
+        0 6px 18px rgba(0, 0, 0, 0.30);
+
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modules-left:hover,
+.modules-center:hover,
+.modules-right:hover {
+    background: linear-gradient(135deg,
+            rgba(137, 180, 250, 0.44) 0%,
+            rgba(30, 30, 46, 0.52) 45%,
+            rgba(203, 166, 247, 0.41) 100%);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.22),
+        inset 0 -1px 1px rgba(0, 0, 0, 0.35),
+        inset 0 0 32px rgba(137, 180, 250, 0.12),
+        0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+/* Workspaces */
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces button {
+    padding: 3px 10px;
+    margin: 0 2px;
+    border-radius: 10px;
+    color: #9399b2;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #cdd6f4;
+}
+
+#workspaces button.active {
+    color: #1e1e2e;
+    background: linear-gradient(135deg,
+            rgba(137, 180, 250, 0.95),
+            rgba(203, 166, 247, 0.85));
+
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.35),
+        0 0 12px rgba(137, 180, 250, 0.45);
+
+    font-weight: 600;
+}
+
+#workspaces button.urgent {
+    background: rgba(243, 139, 168, 0.22);
+    box-shadow: inset 0 0 0 1px rgba(243, 139, 168, 0.45);
+    color: #f38ba8;
+}
+
+/* Consistent module capsules */
+#clock,
+#battery,
+#battery.bat2,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#tray,
+#custom-power,
+#custom-media,
+#idle_inhibitor,
+#power-profiles-daemon,
+#custom-notification {
+    padding: 4px 10px;
+    margin: 2px 3px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.045);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Individual hover effects */
+#clock:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#backlight:hover,
+#custom-power:hover,
+#custom-media:hover,
+#idle_inhibitor:hover,
+#power-profiles-daemon:hover,
+#custom-notification:hover {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+}
+
+/* Module colors */
+#clock {
+    font-weight: 600;
+    color: #89b4fa;
+}
+
+#cpu {
+    color: #a6e3a1;
+}
+
+#memory {
+    color: #f9e2af;
+}
+
+#network {
+    color: #89dceb;
+}
+
+#pulseaudio {
+    color: #cba6f7;
+}
+
+#temperature {
+    color: #fab387;
+}
+
+#backlight {
+    color: #f5c2e7;
+}
+
+#power-profiles-daemon {
+    color: #f9e2af;
+}
+
+#idle_inhibitor {
+    color: #cba6f7;
+}
+
+#custom-media {
+    color: #cdd6f4;
+}
+
+#custom-power {
+    color: #f38ba8;
+}
+
+/* Notification module styling */
+#custom-notification {
+    color: #89b4fa;
+}
+
+#custom-notification.notification {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.15);
+}
+
+#custom-notification.dnd-notification,
+#custom-notification.dnd-none {
+    color: #6c7086;
+}
+
+/* Both ThinkPad batteries */
+#battery.charging {
+    color: #a6e3a1;
+}
+
+#battery.warning {
+    color: #f9e2af;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
+
+/* System tray */
+#tray {
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    background: rgba(243, 139, 168, 0.3);
+    border-radius: 8px;
+}
+
+/* Tooltips */
+tooltip {
+    background: rgba(30, 30, 46, 0.92);
+    border-radius: 12px;
+    border: 1px solid rgba(137, 180, 250, 0.25);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+tooltip label {
+    color: #cdd6f4;
+    padding: 4px 6px;
+}

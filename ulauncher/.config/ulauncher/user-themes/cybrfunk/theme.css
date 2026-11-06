@@ -1,0 +1,76 @@
+/* Main Window */
+.app {
+    background: linear-gradient(135deg,
+            rgba(137, 180, 250, 0.5) 0%,
+            rgba(30, 30, 46, 0.6) 45%,
+            rgba(203, 166, 247, 0.47) 100%);
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
+    color: #cdd6f4;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+}
+
+/* Input Field */
+.input {
+    background: rgba(255, 255, 255, 0.045);
+    border-radius: 10px;
+    border: none;
+    padding: 7px 10px;
+    margin: 2px 3px 10px 3px;
+    color: #cdd6f4;
+    caret-color: #89b4fa;
+}
+
+.input:hover {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.input:focus {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 0 10px rgba(137, 180, 250, 0.30);
+}
+
+/* Result Items - Base */
+.item-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin: 4px 6px;
+}
+
+.item-box:hover {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+/* Selected Item */
+.selected.item-box {
+    background: linear-gradient(135deg, rgba(137, 180, 250, 0.95), rgba(203, 166, 247, 0.85));
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(137, 180, 250, 0.45);
+    border: none;
+}
+
+/* Text */
+.item-name,
+.item-descr {
+    color: #cdd6f4;
+    font-weight: 600;
+}
+
+/* Selected item text */
+.selected.item-box .item-name,
+.selected.item-box .item-descr {
+    color: #1e1e2e;
+}
+
+/* Match highlight (unselected) */
+.item-highlight {
+    color: #89b4fa;
+}
+
+/* Match highlight (selected) */
+.selected.item-box .item-highlight {
+    color: #1e1e2e;
+}
