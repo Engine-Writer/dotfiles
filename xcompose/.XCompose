@@ -59,3 +59,5 @@ include "%L"
 <Multi_key> <r>     : "®" U00AE   # registered, single key
 <Multi_key> <t> <m> : "™" U2122
 <Multi_key> <c> <o> : "©" U00A9   # co (copyright)
+
+<Multi_key> <exclam> <u> : "ᴜ" U028A  # Filter Bypass
